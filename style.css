@@ -32,7 +32,7 @@ h2{
 }
 
 p{
-  font-size: medium;
+  font-size: 18px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   color: aliceblue;
@@ -71,7 +71,7 @@ color: #BE0413;
 }
 
 section h3{
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align:center;
   color: rgb(147, 64, 224);
@@ -95,13 +95,17 @@ figcaption{
   margin: 18px;
 }
 
- ul li{
-  font-size: 18px;
+ .filtros{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  font-size: 22px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: left;
-  color: white;
-  letter-spacing: normal;
+  color: #BF5A47;
+  letter-spacing: 2px;
   margin-bottom: 20px;
+  padding: 20px;
+  
 }
 
 table{

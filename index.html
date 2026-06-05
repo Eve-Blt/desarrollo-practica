@@ -14,6 +14,16 @@
   <header>
     <h1>CLICK MOVIE</h1>
     <h2> tus peliculas favoritas en un solo lugar</h2>
+<nav>
+      <ul>
+        <li><a href="#Terror">Terror</a></li>
+        <li><a href="#Suspenso">Suspenso</a></li>
+        <li><a href="#Horror">Horror</a></li>
+        <li><a href="#Drama">Drama</a></li>
+      </ul>
+    </nav>
+  </header>
+<main> 
    <section>
     <article>
       <header> 
@@ -39,18 +49,9 @@
     </p>
     </article>
    </section>
-
-    <nav>
-      <ul>
-        <li><a href="#Terror">Terror</a></li>
-        <li><a href="#Suspenso">Suspenso</a></li>
-        <li><a href="#Horror">Horror</a></li>
-        <li><a href="#Drama">Drama</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="Terror">
+       
+    
+  <section id="Terror">
       <article>
         <header>
       <h3>Peliculas de Terror</h3>
@@ -81,11 +82,13 @@
       </div>
       
       <!--agregar en CSS margin-bottom: 20px-->
-      <ul> 
+      <ul class="filtros"> 
         <li> Por año </li>
         <li> Por pais</li>
         <li> Mejores puntuadas en IMDB</li>
       </ul>
+
+      
       <table>
         <thead>
           <tr>
@@ -142,7 +145,7 @@
       </div>
 
             <!--agregar en CSS margin-bottom: 20px-->
-    <ul> 
+    <ul class="filtros"> 
       <li>Por año</li>
       <li>Por pais</li>
       <li>Mejores puntuadas en IMDB</li>
@@ -202,7 +205,7 @@
   </figure>
   </div>
               <!--agregar en CSS margin-bottom: 20px-->
-<ul> 
+<ul class="filtros">
   <li>Por año</li>
   <li>Por pais</li>
   <li>Mejores puntuadas en IMDB</li>
@@ -263,7 +266,7 @@
   
                 <!--agregar en CSS margin-bottom: 20px-->
 
-  <ul>
+  <ul class="filtros">
     <li>Por año</li>
     <li>Por pais</li>
     <li>Mejores puntuadas en IMDB</li>
@@ -275,6 +278,8 @@
             <th>Pais</th>
             <th>IMDb</th>
           </tr>
+        </thead>
+        <tbody> 
           <tr>
             <td>El Drama</td>
             <td>Estados Unidos</td>
@@ -285,7 +290,7 @@
             <td>Reino Unido</td>
             <td>7.8</td>
           </tr>
-        </thead>
+        </tbody>
       </table>
   </article>
 </section>
@@ -359,6 +364,8 @@
     <!--Pie de Pagina-->
     <small>&copy; Copyright 2026 Desarrollo Web. Todos los derechos reservados </small>
     <time datetime="2026-01-01"> Fecha de publicacion: 14 de Mayo de 2026</time>
-    <address id="Contact">Contacto: <a href= "mailto:eve.test@gmail.com">eve.test@gmail.com</a>/address>
+    <address id="Contact">Contacto: <a href= "mailto:eve.test@gmail.com">eve.test@gmail.com
+       </a>
+      </address>
   </footer>
 </html>
