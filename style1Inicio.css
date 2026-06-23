@@ -1,0 +1,102 @@
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background: linear-gradient(to right, #141e30, #243b55);
+   margin: 0;
+   padding: 0;
+}
+
+header{
+   text-align: center;
+   padding: 30px;
+}
+
+h1{
+  font-size: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration:underline;
+  text-decoration-thickness: 3px;
+  
+}
+h2{
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(192, 50, 69);
+  letter-spacing: 3px; 
+  margin-bottom: 40px;
+}
+
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h3{
+  animation: aparecer 2s;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffff;
+  text-shadow: 0 0 10px yellow
+  0 0 20px yellow
+  0 0 40px yellow
+  0 0 80px yellow
+}
+
+@keyframes bajarCuchillo{
+  from{
+    transform: translateY(-500px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes aparecerTexto{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.cuchillo{
+  width: 150px;
+  animation: bajarCuchillo 2s ease-out;
+  }
+
+  .bienvenidos{
+    opacity: 0;
+    animation: aparecerTexto 1s forwards;
+    animation-delay: 2.2s;
+    font-size: 25px;
+  }
+
+.boton-formulario{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #CCC1BE;
+  text-decoration-line: underline;
+}
+
+.boton-formulario:hover{
+  color: #F54927;
+}
