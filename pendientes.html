@@ -62,9 +62,13 @@
     Peliculas que quiero ver
   </p>
 
+  <a href="index.html" class="btn-agregar">
+    + Agregar película
+  </a>
+
   <section class="grid-pelicula">
 
-    <article class="card-pelicula">
+    <article class="card-pelicula" data-pelicula="Caseria de Brujas">
 
       <img src="img/caseria-de-brujas.jpg" alt="Poster de Caseria de Brujas">
 
@@ -81,7 +85,7 @@
 
     </article>
 
-     <article class="card-pelicula">
+     <article class="card-pelicula" data-pelicula="La sustancia">
 
             <img src="img/la-sustancia.jpg" alt="Poster de La Sustancia">
 
@@ -98,7 +102,7 @@
 
         </article>
 
-         <article class="card-pelicula">
+         <article class="card-pelicula" data-pelicula="Templo de los Huesos">
 
             <img src="img/el-templo-de-los-huesos.jpg" alt="Poster de El Templo de los Huesos">
 
@@ -115,7 +119,7 @@
 
         </article>
 
-         <article class="card-pelicula">
+         <article class="card-pelicula" data-pelicula="Hombre Lobo">
 
             <img src="img/hombreLobo.jpg" alt="Poster de Hombre Lobo">
 
@@ -133,6 +137,23 @@
         </article>
 
       </section>
+
+      <div class="overlay" id="overlay">
+      <div class="detalle-pelicula">
+
+        <button class="cerrar-overlay" id="cerrar-overlay">
+        ✕
+        </button>
+
+        <h2 id="detalle-titulo"></h2>
+        <p id="detalle-genero"></p>
+        <p id="detalle-sinopsis"></p>
+
+        <div id="detalle-info"></div>
+
+      </div>
+      </div>
+      
 </main>
 
 </body>
