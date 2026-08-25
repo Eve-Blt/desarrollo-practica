@@ -11,16 +11,30 @@ header{
 }
 
 h1{
-  font-size: 40px;
+  font-family: "Nosifer", sans-serif;
+ 
+  font-size: 70px;
   margin-bottom: 80px;
+
   text-align: center;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
+
+  font-weight: 400;
+
   text-decoration:underline;
   text-decoration-thickness: 3px;
-  
+
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #141313 45%, #F54927 75% );
+
+   background-clip: text;
+   -webkit-background-clip: text;
+
+   color: transparent;
+   -webkit-text-fill-color: transparent;
 }
+
 h2{
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
