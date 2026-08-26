@@ -1,5 +1,12 @@
+console.log("Javascript conectado");
+
+const cards = document.querySelectorAll(".card-pelicula");
+
+console.log(cards);
+
 const card = document.querySelectorAll(".card-pelicula");
 const overlay = document.querySelector("#overlay");
+console.log(overlay);
 const cerrarOverlay = document.querySelector("#cerrar-overlay");
 const detalleTitulo = document.querySelector("#detalle-titulo");
 const detalleGenero = document.querySelector("#detalle-genero");
@@ -39,3 +46,24 @@ const peliculas = {
     info: "⭐ 5.6  ·  💬 11",
   },
 };
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    console.log("hice click en una card");
+
+    const peliculaSeleccionada = card.dataset.pelicula;
+
+    const pelicula = peliculas[peliculaSeleccionada];
+
+    detalleTitulo.textContent = pelicula.titulo;
+    detalleGenero.textContent = pelicula.genero;
+    detalleSinopsis.textContent = pelicula.sinopsis;
+    detalleInfo.textContent = pelicula.info;
+
+    overlay.stayle.display = "flex";
+  });
+});
+
+cerrarOverlay.addEventListener("click", () => {
+  overlay.stayle.display = "none";
+});
