@@ -79,8 +79,12 @@
       </p>
 
       <div class="info-pelicula">
+
        <span>⭐ 5.7</span>
-        <span>💬 24</span>
+       <button class="btn-comentarios" data-pelicula="CaseriadeBrujas">
+         💬 24
+       </button>
+        
       </div>
 
     </article>
@@ -96,8 +100,12 @@
             </p>
 
             <div class="info-pelicula">
+
                 <span>⭐ 7.2</span>
-                <span>💬 31</span>
+                 <button class="btn-comentarios" data-pelicula="LaSustancia">
+                  💬 31
+                 </button>
+              
             </div>
 
         </article>
@@ -113,8 +121,12 @@
             </p>
 
             <div class="info-pelicula">
+
                 <span>⭐ 7.2</span>
-                <span>💬 18</span>
+              <button class="btn-comentarios" data-pelicula="ElTemplodelosHuesos">
+              💬 18
+              </button>
+                
             </div>
 
         </article>
@@ -131,13 +143,17 @@
 
             <div class="info-pelicula">
                 <span>⭐ 5.6</span>
-                <span>💬 11</span>
+                <button class="btn-comentarios" data-pelicula="HombreLobo">
+                 💬 11
+                </button>
+                
             </div>
 
         </article>
 
       </section>
 
+      <!---OVERLAY SINOPSIS-->
       <div class="overlay" id="overlay">
       <div class="detalle-pelicula">
 
@@ -153,6 +169,61 @@
 
       </div>
       </div>
+
+      <!--OVERLAY COMENTARIOS-->
+
+      <div class="overlay-comenatrios" id="overlay-comentarios">
+
+        <div class="comentarios-pelicula">
+          <button class="cerrar-comentarios" id="cerrar-comentarios">
+              ✕
+          </button>
+
+          <h2 id="comenatrios-titulo"></h2>
+
+          <div class="lista-comentarios" id="lista-comentarios">
+
+            <div class="comentario">
+              <strong>Usuario 1</strong>
+              <span>⭐⭐⭐⭐⭐</span>
+              <p>Me encantó la película,muy buena ambientación</p>
+            </div>
+
+            <div class="comentario">
+              <strong>Usuario 2</strong>
+              <span>⭐⭐⭐⭐</span>
+              <p>La historia me mantuvo entretenido</p>
+            </div>
+
+          </div>
+
+          <div class="nuevo-comentario">
+            <h3>Dejá tu comentario</h3>
+
+            <div class="puntuacion">
+              <span>Tu puntuación</span>
+
+               <button>⭐</button>
+                <button>⭐</button>
+                <button>⭐</button>
+                <button>⭐</button>
+                <button>⭐</button>
+
+            </div>
+
+            <textarea
+            id="texto-comentario"
+            placeholder="Escribí tu comentario...">
+          </textarea>
+
+          <button class="btn-publicar" id="btn-publicar">
+            Publicar comentario
+          </button>
+
+          </div>
+          </div>
+        </div>
+      
 
 </main>
 

@@ -290,3 +290,199 @@ cursor: pointer;
 #detalle-sinopsis{
     color: white;
 }
+
+/*BOTON COMENTARIOS*/
+
+.btn-comentarios {
+    background: none;
+    border: none;
+
+    color: inherit;
+
+    font-size: inherit;
+    font-family: inherit;
+
+    cursor: inherit;
+}
+
+.btn-comentarios:hover {
+    color: #BE0413;
+}
+
+/*OVERLAY COMENTARIOS*/
+
+.overlay-comentarios {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba (0, 0, 0, 0.75);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1001;
+
+}
+
+/*VENTANA COMENTARIOS*/
+
+.comentarios-pelicula {
+
+    position: relative;
+
+    width: 600px;
+    max-width: 90%;
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    padding: 40px;
+
+    background-color: #14243a;
+
+    border: 2px solid #BE0413;
+    border-radius: 10px;
+
+    box-shadow: 0, 0, 30px rgba(190, 4, 19, 0.5);
+}
+
+/*TITULO*/
+
+.comentarios-pelicula h2{
+    margin-bottom: 25px;
+
+    color: #BE0413;
+
+    font-size: 30px;
+}
+
+/*CERRAR*/
+
+.cerrar-comentarios {
+    position:absolute;
+
+    top: 15px;
+    right: 20px;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 25px;
+
+cursor: pointer;
+
+}
+
+/*COMENTARIOS*/
+
+.comentario {
+    padding: 15;
+
+    margin-bottom: 15px;
+
+    background-color: #0d1726;
+
+    border-left: 3px solid #BE0413;
+    border-radius: 5px;
+}
+
+.comentario strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.comentario span {
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+.comentario p {
+    color:#d6d6d6;
+}
+
+/*NUEVO COMENTARIO*/
+
+.nuevo-comentario {
+    margin-top: 30px;
+}
+
+.nuevo-comentario h3{
+
+    margin-bottom: 15px;
+}
+
+/*PUNTUACION*/
+
+.puntuacion {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-bottom: 15px;
+}
+
+.puntuacion button {
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+/*TEXTAREA*/
+
+#texto-comentario {
+    width: 100%;
+    min-height: 100px;
+
+    padding: 12px;
+
+    resize: vertical;
+    background-color: #0d1726;
+
+    border: 1px solid #26384f;
+    border-radius: 5px;
+
+    color: white;
+
+    font-family: inherit;
+}
+
+#texto-comentario::placeholder {
+    color: #8d98a8;
+}
+
+/*PUBLICAR*/
+
+.btn-publicar {
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background-color: #BE0413;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.btn-publicar:hover {
+
+    background-color: #F82533;
+}

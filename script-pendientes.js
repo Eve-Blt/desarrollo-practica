@@ -4,13 +4,18 @@ const cards = document.querySelectorAll(".card-pelicula");
 
 console.log(cards);
 
-const card = document.querySelectorAll(".card-pelicula");
 const overlay = document.querySelector("#overlay");
+
 console.log(overlay);
+
 const cerrarOverlay = document.querySelector("#cerrar-overlay");
+
 const detalleTitulo = document.querySelector("#detalle-titulo");
+
 const detalleGenero = document.querySelector("#detalle-genero");
+
 const detalleSinopsis = document.querySelector("#detalle-sinopsis");
+
 const detalleInfo = document.querySelector("#detalle-info");
 
 const peliculas = {
@@ -60,10 +65,10 @@ cards.forEach((card) => {
     detalleSinopsis.textContent = pelicula.sinopsis;
     detalleInfo.textContent = pelicula.info;
 
-    overlay.stayle.display = "flex";
+    overlay.style.display = "flex";
   });
 });
 
 cerrarOverlay.addEventListener("click", () => {
-  overlay.stayle.display = "none";
+  overlay.style.display = "none";
 });
