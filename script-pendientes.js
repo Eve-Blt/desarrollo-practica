@@ -32,6 +32,10 @@ const comentariosTitulo = document.querySelector("#comentarios-titulo");
 
 const botonesComentarios = document.querySelectorAll(".btn-comentarios");
 
+const estrellas = document.querySelectorAll(".puntuacion button");
+
+let puntuacionSeleccionada = 0;
+
 const peliculas = {
   CaseriadeBrujas: {
     titulo: "Caseria de Brujas",
@@ -122,4 +126,30 @@ botonesComentarios.forEach((boton) => {
 
 cerrarComentarios.addEventListener("click", () => {
   overlayComentarios.style.display = "none";
+});
+
+estrellas.forEach((estrella) => {
+  estrella.addEventListener("click", () => {
+    const puntuacion = Number(estrella.dataset.puntuacion);
+
+    if (puntuacion === puntuacionSeleccionada) {
+      puntuacionSeleccionada = 0;
+
+      estrellas.forEach((estrella) => {
+        estrella.classList.remove("seleccionada");
+      });
+    } else {
+      puntuacionSeleccionada = puntuacion;
+
+      estrellas.forEach((estrella) => {
+        if (Number(estrella.dataset.puntuacion) <= puntuacionSeleccionada) {
+          estrella.classList.add("seleccionada");
+        } else {
+          estrella.classList.remove("seleccionada");
+        }
+      });
+    }
+
+    console.log("Ountuacion seleccionada:", puntuacionSeleccionada);
+  });
 });
