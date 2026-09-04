@@ -453,11 +453,12 @@ cursor: pointer;
     color: #f5c518;
 }
 
-.puntuacion button:hover,
-.puntuacion button:focus {
+.puntuacion button:hover {
 
     color: #f5c518;
 }
+
+
 
 .puntuacion button:focus {
     outline: 2px solid #f5c518;
