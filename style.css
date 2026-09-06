@@ -176,7 +176,7 @@ figure {
   gap: 20px;
 
   width: 95%;
-  max-width: 1600px;
+  max-width: 1700px;
   margin: 20px auto 0;
   }
 
@@ -224,6 +224,22 @@ figure {
     margin: 10px 0;
   }
 
+
+  .info-pelicula {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 16px; 
+  }
+
+  .info-pelicula span {
+    color: aliceblue;
+  }
+
+  
   .btn-carrusel {
     flex-shrink: 0;
 
