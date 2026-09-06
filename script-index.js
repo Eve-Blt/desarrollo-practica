@@ -17,6 +17,13 @@ carruseles.forEach((poster) => {
       left: 500,
       behavior: "smooth",
     });
+
+    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+      carousel.scrollTo({
+        left: 0,
+        behavior: "smooth",
+      });
+    }
   });
 
   anterior.addEventListener("click", () => {
@@ -24,5 +31,12 @@ carruseles.forEach((poster) => {
       left: -500,
       behavior: "smooth",
     });
+
+    if (carousel.scrollLeft <= 0) {
+      carousel.scrollTo({
+        left: carousel.scrollWidth,
+        behavior: "smooth",
+      });
+    }
   });
 });
