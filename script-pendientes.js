@@ -30,6 +30,8 @@ const cerrarComentarios = document.querySelector("#cerrar-comentarios");
 
 const comentariosTitulo = document.querySelector("#comentarios-titulo");
 
+const listaComentarios = document.querySelector("#lista-comentarios");
+
 const botonesComentarios = document.querySelectorAll(".btn-comentarios");
 
 const estrellas = document.querySelectorAll(".puntuacion button");
@@ -52,7 +54,37 @@ const peliculas = {
     sinopsis:
       "La trama sigue a Elisabeth Sparkle, una famosa actriz en decadencia que consume un producto clandestino para crear una versión más joven y perfecta de sí misma, lo que desencadena graves consecuencias",
     info: "⭐ 7.2",
-    comentarios: 31,
+    comentarios: [
+      {
+        usuario: "Usuario 1",
+        puntuacion: 5,
+        texto: "Me encantó la película, muy buena ambientación.",
+      },
+
+      {
+        usuario: "Usuario 2",
+        puntuacion: 4,
+        texto: "La historia me mantuvo entretenido.",
+      },
+
+      {
+        usuario: "Usuario 3",
+        puntuacion: 5,
+        texto: "Excelente pelicula, muy recomndable.",
+      },
+
+      {
+        usuario: "Usuario 4",
+        puntuacion: 3,
+        texto: "Los efectos increíbles, pero muy mal guión.",
+      },
+
+      {
+        usuario: "Usuario 5",
+        puntuacion: 4,
+        texto: "Buena pelicula, aunque algunas partes me parecieron lentas.",
+      },
+    ],
   },
 
   ElTemplodelosHuesos: {
@@ -88,7 +120,7 @@ cards.forEach((card) => {
 
     detalleRating.textContent = pelicula.info;
 
-    botonComentariosDetalle.textContent = `💬 ${pelicula.comentarios}`;
+    botonComentariosDetalle.textContent = `💬 ${pelicula.comentarios.length}`;
     botonComentariosDetalle.dataset.pelicula = peliculaSeleccionada;
 
     overlay.style.display = "flex";
@@ -104,6 +136,18 @@ botonComentariosDetalle.addEventListener("click", () => {
   const pelicula = peliculas[peliculaSeleccionada];
 
   comentariosTitulo.textContent = pelicula.titulo;
+
+  listaComentarios.innerHTML = "";
+
+  pelicula.comentarios.forEach((comentario) => {
+    listaComentarios.innerHTML += `
+    <div class = "comentario">
+    <strong>${comentario.usuario}</strong>
+    <span>${"⭐".repeat(comentario.puntuacion)}</span>
+    <p>${comentario.texto}</p
+    </div>
+    `;
+  });
 
   overlay.style.display = "none";
 
